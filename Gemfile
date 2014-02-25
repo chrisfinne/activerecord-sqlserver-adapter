@@ -1,9 +1,8 @@
-
 source 'https://rubygems.org'
 
 if ENV['RAILS_SOURCE']
   gemspec :path => ENV['RAILS_SOURCE']
-else
+elsif false
   version = ENV['RAILS_VERSION'] || begin
     require 'net/http'
     require 'yaml'
